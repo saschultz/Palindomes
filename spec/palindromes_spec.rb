@@ -25,4 +25,8 @@ describe('String#palindromes') do
   it('will compare a sentece') do
     expect(('Too hot to hoot').palindromes()).to(eq(true))
   end
+
+  it('will compare a sequence of characters or symbols') do
+    expect(('!@##@!').palindromes()).to(eq(true))
+  end
 end
