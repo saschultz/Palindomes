@@ -13,4 +13,16 @@ describe('String#palindromes') do
   it('will compare a three letter word') do
     expect(("pop").palindromes()).to(eq(true))
   end
+
+  it('will compare a 6 letter word') do
+    expect(("hannah").palindromes()).to(eq(true))
+  end
+
+  it('will compare a number') do
+    expect((55.55).palindromes()).to(eq(true))
+  end
+
+  it('will compare a sentece') do
+    expect(('Too hot to hoot').palindromes()).to(eq(true))
+  end
 end

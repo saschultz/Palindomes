@@ -1,6 +1,6 @@
-class String
+# class String
   define_method(:palindromes) do
-    string_to_test = self.to_s
+    string_to_test = self.to_s.downcase().split(" ").join("")
     length = string_to_test.length
     counted_length = length.to_f./(2).ceil()
     booleans_array = []
@@ -11,11 +11,7 @@ class String
       index += 1
     end
 
-    if booleans_array.include?(false)
-      false
-    else
-      true
-    end
+    !(booleans_array.include?(false))
 
   end
-end
+# end
