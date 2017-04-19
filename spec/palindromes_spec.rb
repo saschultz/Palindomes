@@ -29,4 +29,8 @@ describe('String#palindromes') do
   it('will compare a sequence of characters or symbols') do
     expect(('!@##@!').palindromes()).to(eq(true))
   end
+
+  it('will compare a sentece with symbols') do
+    expect(('Eve, mad Adam, Eve!').palindromes()).to(eq(false))
+  end
 end
