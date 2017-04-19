@@ -8,8 +8,11 @@ get('/') do
   erb(:index)
 end
 
-get('/answer') do
-  @answer = params.fetch('user_string').palindromes()
-
-  erb(:answer)
+get('/index') do
+  if params.fetch('user_string').palindromes()
+    @answer = "Yes this is a Palindrome!!"
+  else
+    @answer = "No this is not a Palindrome."
+  end
+  erb(:index)
 end

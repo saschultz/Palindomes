@@ -1,1 +1,10 @@
-
+<form class="" action="/index">
+  <div class="form-group">
+    <label for="user_string">Enter a word or phrase to see if it's a palindrome!</label>
+    <input type="text" id="user_string" name="user_string" class="form-control">
+  </div>
+  <button type="submit" name="reveal" class="btn">reveal</button>
+</form>
+<div class="answer">
+  <h4><%= @answer %></h4>
+</div>
