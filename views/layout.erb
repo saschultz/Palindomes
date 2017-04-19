@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>palindromes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="/css/styles.css" media="screen" type="text/css">
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>Palindrome Checker!</h1>
+    </div>
+    <div class="container">
+      <form class="" action="/answer">
+        <div class="form-group">
+          <label for="user_string">Enter a word or phrase to see if it's a palindrome!</label>
+          <input type="text" id="user_string" name="user_string" class="form-control">
+        </div>
+        <button type="submit" name="reveal" class="btn">reveal</button>
+      </form>
+      <%= yield %>
+    </div>
+  </body>
+</html>
