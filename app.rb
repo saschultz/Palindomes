@@ -9,7 +9,9 @@ get('/') do
 end
 
 get('/index') do
-  if params.fetch('user_string').palindromes()
+  if params.fetch('user_string').==('')
+    @answer = ''
+  elsif params.fetch('user_string').palindromes()
     @answer = "Yes this is a Palindrome!!"
   else
     @answer = "No this is not a Palindrome."
